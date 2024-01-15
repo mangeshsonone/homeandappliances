@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    {% for i in obj %}
+    
+    <a href="/protype/?slug={{i.slug}}">{{i.categaory_name}}</a>
+    <!-- {% comment %}  -->
+    <a href="/protype/">{{i.categaory_name}}</a>
+     <!-- {% endcomment %} -->
+    <br>
+    {% endfor %}
+    
+    
+</body>
+<script>
+    document.write(obj)
+    {% comment %} if(typeof(obj)=='object')
+    {
+        document.write('True')
+    } 
+    {% endcomment %}
+</script>
+</html>
